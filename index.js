@@ -12,7 +12,7 @@ if (!databaseUri) {
 }
 
 var uq_qa1 = new ParseServer({
-  databaseURI: databaseUri || 'mongodb://localhost:27017/dev',
+  databaseURI: databaseUri || 'mongodb://localhost:27017/dev2',
   cloud: process.env.CLOUD_CODE_MAIN || __dirname + '/cloud/main.js',
   appId: process.env.APP_ID || 'cirpack.tma.vn.pushNotificationTest',
   verbose: true,
@@ -28,7 +28,7 @@ var uq_qa1 = new ParseServer({
     }
   },
   masterKey: process.env.MASTER_KEY || 'master', //Add your master key here. Keep it secret!
-  serverURL: process.env.SERVER_URL || 'https://pacific-brushlands-55337.herokuapp.com/parse',  // Don't forget to change to https if needed
+  serverURL: process.env.SERVER_URL || 'https://still-island-51051.herokuapp.com/parse',  // Don't forget to change to https if needed
   liveQuery: {
     classNames: ["Posts", "Comments"] // List of classes to support for query subscriptions
   }
@@ -36,7 +36,7 @@ var uq_qa1 = new ParseServer({
 
 
 var uq_smart = new ParseServer({
-  databaseURI: databaseUri || 'mongodb://localhost:27017/dev',
+  databaseURI: databaseUri || 'mongodb://localhost:27017/dev2',
   cloud: process.env.CLOUD_CODE_MAIN || __dirname + '/cloud/main.js',
   appId: process.env.APP_ID || 'smartuq-parse',
   verbose: true,
@@ -52,7 +52,7 @@ var uq_smart = new ParseServer({
     }
   },
   masterKey: process.env.MASTER_KEY || 'master', //Add your master key here. Keep it secret!
-  serverURL: process.env.SERVER_URL || 'https://pacific-brushlands-55337.herokuapp.com/smart',  // Don't forget to change to https if needed
+  serverURL: process.env.SERVER_URL || 'https://still-island-51051.herokuapp.com/smart',  // Don't forget to change to https if needed
   liveQuery: {
     classNames: ["Posts", "Comments"] // List of classes to support for query subscriptions
   }
